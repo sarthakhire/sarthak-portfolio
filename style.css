@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color:#FAF8F3;
+    color: #1F1D1A;
+    
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+    border: 1px solid #1F1D1A;
+    padding: 1rem 6%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    backdrop-filter: blur(18px);
+}
+
+a {
+    text-decoration: none;
+    color: #8a8880 ;
+}
+
+
+.nav-logo {
+    text-decoration: none;
+    justify-self: flex-start;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f1d1a;
+
+}
+
+.nav-logo span {
+    color: #ba7517;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0.9rem;
+}
+
+
+#hero, #about, #projects, #contacts{
+    padding: 5rem 6%;
+}
+
+.hero-eyebrow, .section-label {
+    color: #ba7517;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.hero-sub {
+    margin-bottom: 1rem;   
+}
+
+strong {
+    font-size: larger;
+}
+
+p {
+    color: #8a8880;
+}
+
+.but-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* .btn btn-primary {
+    background-color: #ba7517;
+    color: #1f1d1a;
+    border: none;
+}
+ */
