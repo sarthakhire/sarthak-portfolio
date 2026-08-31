@@ -53,16 +53,9 @@ a {
   padding: 5rem 6%;
 }
 
-/* #about,
-#contacts {
-  background-color: #1f1d1a;
-  color: #faf8f3;
-} */
-
 .hero-eyebrow,
 .section-label,
-.skills-section-title
-{
+.skills-section-title {
   color: #ba7517;
   font-size: 0.8rem;
   font-weight: 600;
@@ -97,8 +90,15 @@ p {
 }
 
 .ghost {
-    margin-bottom: 1rem;
-    padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.75rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.ghost:hover {
+  background-color: #1f1d1a;
+  color: #faf8f3;
+  transform: scale(1.02);
 }
 
 .btn-primary {
@@ -107,60 +107,83 @@ p {
   padding: 0.75rem 1.5rem;
   border-radius: 9px;
   margin-bottom: 1rem;
-  
 }
 
-/* .btn.btn-primary {
-    padding: 0.75rem 1.75rem;
-    border-radius: 9px;
-} */
 .btn.btn-primary a {
-    color: #faf8f3;
+  color: #faf8f3;
 }
-
 
 .btn {
-    padding: 0.75rem 1.75rem;
-    border: 1px solid #8a8880;
-    border-radius: 6px;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid #8a8880;
+  border-radius: 9px;
+}
+
+.btn.btn-primary:hover {
+  transition: 0.2s ease;
+  border: 1px solid #8a8880;
+  transform: scale(1.02);
+}
+
+.btn-primary:hover{
+  border: 1px solid #faf8f3;
+}
+
+.nav-links a:hover {
+  color: #1f1d1a;
+  transform: scale(1.03);
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 #skills {
-    color: #8a8880;
-
+  color: #8a8880;
 }
 
 .skills-grid {
-    display: flex;
-    gap: 1rem;
-    
+  display: flex;
+  gap: 1rem;
 }
 
 .skill-pill {
-    border: 1px solid #8a8880;
-    padding: 0.5rem 0.8rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+  border: 1px solid #8a8880;
+  padding: 0.5rem 0.8rem;
+  border-radius: 9px;
+  margin-bottom: 1rem;
+  transition: 0.2s ease;
 }
+
+.skill-pill:hover {
+  transform: scale(1.02);
+  background-color: #ba7517;
+  color: #faf8f3;
+}
+
 #contacts {
-    text-align: center;
+  text-align: center;
   background-color: #1f1d1a;
   color: #faf8f3;
 }
 
-
 .social-links {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
 }
 
 .social-link {
-    border: 1px solid #8a8880;
-    color: #8a8880;
-    padding: 0.5rem 0.9rem;
-    border-radius: 9px;
+  border: 1px solid #8a8880;
+  color: #8a8880;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9px;
+  transform: 0.2s ease;
+}
+
+.social-link:hover {
+  border: 1px solid #faf8f3;
+  color: #faf8f3;
 }
 
 footer {
